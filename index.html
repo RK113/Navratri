@@ -255,10 +255,12 @@ function change(){
   // Allow audio on first click
     audio.muted = false;
     audio0.muted = false;
-    audio0.play();
-    setTimeout(() => {
-      audio.play();
-    }, 7000);
+    audio0.play().then(() => {
+  // After thunder ends, start bg music
+  audio0.onended = () => {
+    audio.play();
+  };
+});
 
   // Change storm image + fade
   setTimeout(() => {
