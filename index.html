@@ -3,20 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta property="og:title" content="Happy Navaratri ✨" />
-<!-- HTML Meta Tags -->
-<title>Happy Navaratri ✨</title>
-<meta name="description" content="">
 
 <!-- Facebook Meta Tags -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Happy Navaratri ✨">
-<meta property="og:image" content="https://raw.githubusercontent.com/RK113/Navratri/refs/heads/main/n.jpg">
+<meta property="og:image" content="https://raw.githubusercontent.com/RK113/Navratri/refs/heads/main/og0.jpg">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Happy Navaratri ✨">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/RK113/Navratri/refs/heads/main/n.jpg">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/RK113/Navratri/refs/heads/main/og0.jpg">
 
 <!-- Meta Tags Generated via https://www.opengraph.xyz -->
 <meta property="og:type" content="article" />
@@ -224,7 +220,7 @@ if (queryName) {
 
   // Update WhatsApp share link
   const pageUrl = window.location.href;
-  const whatsappMsg = `&#127800 Happy Navaratri, ${queryName}\n✨ View Card: ${pageUrl}`;
+  const whatsappMsg = `\u{1F338}Happy Navaratri, ${queryName}\n\u{2728} View Card: ${pageUrl}`;
   shareBtn.href = `https://wa.me/?text=${encodeURIComponent(whatsappMsg)}`;
 }
 
@@ -245,7 +241,7 @@ saveBtn.addEventListener("click", () => {
     window.history.replaceState({}, "", newUrl);
 
     // Update WhatsApp share link
-    const whatsappMsg = `&#127800 Happy Navaratri, ${name}\n✨ View Card: ${window.location.href}`;
+    const whatsappMsg = `\u{1F338}Happy Navaratri, ${name}\n\u{2728} View Card: ${window.location.href}`;
     shareBtn.href = `https://wa.me/?text=${encodeURIComponent(whatsappMsg)}`;
   }
 });
