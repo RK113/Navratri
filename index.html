@@ -224,7 +224,7 @@ if (queryName) {
 
   // Update WhatsApp share link
   const pageUrl = window.location.href;
-  const whatsappMsg = `🌸 Happy Navaratri, ${queryName}\n✨ View Card: ${pageUrl}`;
+  const whatsappMsg = `&#127800 Happy Navaratri, ${queryName}\n✨ View Card: ${pageUrl}`;
   shareBtn.href = `https://wa.me/?text=${encodeURIComponent(whatsappMsg)}`;
 }
 
@@ -245,7 +245,7 @@ saveBtn.addEventListener("click", () => {
     window.history.replaceState({}, "", newUrl);
 
     // Update WhatsApp share link
-    const whatsappMsg = `🌸 Happy Navaratri, ${name}\n✨ View Card: ${window.location.href}`;
+    const whatsappMsg = `&#127800 Happy Navaratri, ${name}\n✨ View Card: ${window.location.href}`;
     shareBtn.href = `https://wa.me/?text=${encodeURIComponent(whatsappMsg)}`;
   }
 });
